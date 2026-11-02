@@ -132,7 +132,7 @@ create_invoice(invoice_num, order_data, directory)
 
 def send_email(invoice_num, name, email, date, directory):
     gmail_user = 'emmagstone7@gmail.com'
-    gmail_password_path = file_input('Please select the gmail password file')
+    gmail_password_path = select_file('Please select the gmail password file')
     gmail_password= open(gmail_password_path).read()
 
 # List of recipients
